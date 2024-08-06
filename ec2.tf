@@ -2,7 +2,7 @@
 resource "aws_instance" "my-website" {
   ami                    = "ami-04a81a99f5ec58529"
   instance_type          = "t2.micro"
-  key_name               = "MyShhKey"
+  key_name               = "name-of-your-ssh-key"
   availability_zone      = "us-east-1a"
   associate_public_ip_address = true
   subnet_id              = aws_subnet.public.id
